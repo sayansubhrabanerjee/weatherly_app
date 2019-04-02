@@ -4,12 +4,12 @@ import android.content.IntentFilter
 import android.net.ConnectivityManager
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import sayan.banerjee.weatherly.R
+import sayan.banerjee.weatherly.common.network.listener.INetworkListener
 import sayan.banerjee.weatherly.common.network.receiver.NetworkReceiver
 import sayan.banerjee.weatherly.common.network.util.NetworkConstants
 import sayan.banerjee.weatherly.common.network.util.NetworkUtil
 import sayan.banerjee.weatherly.common.network.util.displayToast
-import sayan.banerjee.weatherly.R
-import sayan.banerjee.weatherly.common.network.listener.INetworkListener
 
 open class BaseActivity : AppCompatActivity(), INetworkListener {
     private var mNetworkReceiver: NetworkReceiver? = null

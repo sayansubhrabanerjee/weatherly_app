@@ -19,20 +19,20 @@ class WeatherActivity : BaseActivity() {
         addWeatherErrorFragment()
     }
 
-    private fun addWeatherSuccessFragment() {
-        supportFragmentManager.beginTransaction()
-            .replace(
-                R.id.layout_container,
-                WeatherSuccessFragment()
-            )
-            .commit()
-    }
-
     private fun addWeatherErrorFragment() {
         supportFragmentManager.beginTransaction()
             .replace(
                 R.id.layout_container,
                 WeatherErrorFragment()
+            )
+            .commit()
+    }
+
+    private fun addWeatherSuccessFragment() {
+        supportFragmentManager.beginTransaction()
+            .replace(
+                R.id.layout_container,
+                WeatherSuccessFragment()
             )
             .commit()
     }

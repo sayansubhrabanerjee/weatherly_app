@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@color/error_background_red">
 
-    <Button
-            android:text="Button"
-            android:layout_width="87dp"
+    <TextView
+            android:text="@string/msg_please_check_your"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/button_click" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="@dimen/textView_something_margin_all"
+            android:layout_marginStart="@dimen/textView_something_margin_all"
+            android:layout_marginEnd="@dimen/textView_something_margin_all"
+            android:layout_marginRight="@dimen/textView_something_margin_all"
+            style="@style/WeatherErrorTitleAppearance"/>
+    <ImageView
+            android:layout_width="@dimen/imageview_no_internet_height_width"
+            android:layout_height="@dimen/imageview_no_internet_height_width" app:srcCompat="@drawable/no_internet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="@dimen/imageview_no_internet_margin_top"
+            android:contentDescription="@string/no_network"/>
+
 </android.support.constraint.ConstraintLayout>

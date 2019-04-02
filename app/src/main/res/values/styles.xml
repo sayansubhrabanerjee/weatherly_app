@@ -8,4 +8,22 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CurrentTempTitleAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/current_temp_and_weather_data_black</item>
+        <item name="android:fontFamily">@font/roboto_black</item>
+        <item name="android:textSize">@dimen/textView_current_temp_font_size</item>
+    </style>
+
+    <style name="CurrentCitySubTitleAppearance" parent="CurrentTempTitleAppearance">
+        <item name="android:textColor">@color/current_city_black</item>
+        <item name="android:fontFamily">@font/roboto_thin</item>
+        <item name="android:textSize">@dimen/textView_current_city_font_size</item>
+    </style>
+
+    <style name="WeatherErrorTitleAppearance" parent="CurrentCitySubTitleAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textView_something_text_size</item>
+    </style>
+
+
 </resources>
