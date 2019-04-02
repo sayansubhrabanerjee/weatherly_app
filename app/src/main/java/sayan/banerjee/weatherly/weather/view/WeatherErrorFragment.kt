@@ -6,15 +6,9 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.fragment_weather_error.view.*
 import sayan.banerjee.weatherly.R
 
-class WeatherErrorFragment : Fragment(), View.OnClickListener {
-    override fun onClick(v: View?) {
-        when(v?.id){
-            R.id.button_click -> inflateWeatherSuccessFragment()
-        }
-    }
+class WeatherErrorFragment : Fragment(){
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,17 +21,6 @@ class WeatherErrorFragment : Fragment(), View.OnClickListener {
     }
 
     private fun initViews(v: View) {
-        v.button_click.setOnClickListener(this)
-    }
-
-    private fun inflateWeatherSuccessFragment() {
-        activity!!.supportFragmentManager.beginTransaction()
-            .replace(
-                R.id.layout_container,
-                WeatherSuccessFragment()
-            )
-            .addToBackStack(null)
-            .commit()
     }
 
 }

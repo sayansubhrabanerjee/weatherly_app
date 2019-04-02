@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textView_something_margin_all">16dp</dimen>
+    <dimen name="textView_something_text_size">42sp</dimen>
+    <dimen name="textView_current_temp_font_size">96sp</dimen>
+    <dimen name="textView_current_city_font_size">36sp</dimen>
+    <dimen name="imageview_no_internet_height_width">150dp</dimen>
+    <dimen name="imageview_no_internet_margin_top">32dp</dimen>
+
+
+</resources>
