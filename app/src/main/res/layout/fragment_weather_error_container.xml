@@ -5,12 +5,6 @@
              android:layout_height="match_parent"
              tools:context=".weather.view.WeatherErrorFragment">
 
-
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/weather_error_fragment"/>
-
     <include layout="@layout/fragment_weather_error"/>
 
 </FrameLayout>

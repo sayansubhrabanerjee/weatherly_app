@@ -12,14 +12,14 @@ class WeatherActivity : BaseActivity() {
     }
 
     override fun initOnlineFlow() {
-        addWeatherSuccessFragment()
+        initWeatherSuccessFragment()
     }
 
     override fun initOfflineFlow() {
-        addWeatherErrorFragment()
+        initWeatherErrorFragment()
     }
 
-    private fun addWeatherErrorFragment() {
+    private fun initWeatherErrorFragment() {
         supportFragmentManager.beginTransaction()
             .replace(
                 R.id.layout_container,
@@ -28,7 +28,7 @@ class WeatherActivity : BaseActivity() {
             .commit()
     }
 
-    private fun addWeatherSuccessFragment() {
+    private fun initWeatherSuccessFragment() {
         supportFragmentManager.beginTransaction()
             .replace(
                 R.id.layout_container,

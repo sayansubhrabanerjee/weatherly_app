@@ -20,9 +20,20 @@
         <item name="android:textSize">@dimen/textView_current_city_font_size</item>
     </style>
 
+    <style name="WeatherDataAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/current_temp_and_weather_data_black</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/weather_data_text_size</item>
+    </style>
+
     <style name="WeatherErrorTitleAppearance" parent="CurrentCitySubTitleAppearance">
         <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">@dimen/textView_something_text_size</item>
+        <item name="android:textSize">@dimen/textView_network_error_text_size</item>
+    </style>
+
+    <style name="RetryButtonAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:background">@color/retry_button_black</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
 
