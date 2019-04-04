@@ -15,6 +15,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginStart="@dimen/textView_network_error_margin_all"
             android:layout_marginEnd="@dimen/textView_network_error_margin_all"
+            android:gravity="center"
             style="@style/WeatherErrorTitleAppearance" android:id="@+id/textView"/>
     <ImageView
             android:layout_width="@dimen/imageview_no_internet_height_width"

@@ -1,6 +1,7 @@
 package sayan.banerjee.weatherly.weather.view
 
 import android.content.IntentFilter
+import android.content.pm.ActivityInfo
 import android.net.ConnectivityManager
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -19,6 +20,13 @@ open class BaseActivity : AppCompatActivity(), INetworkListener {
 
         NetworkUtil.setConnectivityListener(this)
         registerNetworkReceiver()
+        setOrientation()
+    }
+
+    private fun setOrientation() {
+        if (resources.getBoolean(R.bool.portrait_only)) {
+            requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+        }
     }
 
     private fun registerNetworkReceiver() {

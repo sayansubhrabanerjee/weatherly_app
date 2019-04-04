@@ -37,13 +37,13 @@ class WeatherErrorFragment : Fragment(){
 
     private fun displayAlertDialog(v: View){
         AlertDialog.Builder(mContext!!)
-            .setTitle("Turn on your Wi-Fi")
-            .setMessage("Please turn on your Wi-Fi to get Weather Updates")
-            .setPositiveButton("Turn On") { dialog, which ->
+            .setTitle(resources.getString(R.string.turn_on_wifi))
+            .setMessage(resources.getString(R.string.msg_please_turn_on))
+            .setPositiveButton(resources.getString(R.string.turn_on)) { dialog, which ->
                 val wifi = v.context?.getSystemService(Context.WIFI_SERVICE) as WifiManager?
                 wifi!!.isWifiEnabled = true
             }
-            .setNegativeButton("Cancel"
+            .setNegativeButton(resources.getString(R.string.cancel)
             ) { dialog, which -> dialog?.dismiss() }.create().show()
     }
 

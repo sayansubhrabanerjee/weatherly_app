@@ -11,6 +11,10 @@
     <string name="forecast_weather_icon">Forecast weather icon</string>
     <string name="retry">Retry</string>
     <string name="loading">Loading</string>
+    <string name="turn_on_wifi">Turn on Wi-Fi</string>
+    <string name="msg_please_turn_on">Please turn on your Wi-Fi to get weather updates</string>
+    <string name="turn_on">Turn on</string>
+    <string name="cancel">Cancel</string>
 
 
 </resources>

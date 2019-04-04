@@ -84,6 +84,7 @@ class WeatherSuccessFragment : Fragment(), IFetchCurrentWeatherListener, IFetchF
     private fun hideProgress(v: View) {
         clearProgressImageAnimation(v)
         v.imageView_loading.visibility = View.GONE
+        startSlideUpAnimation(v)
     }
 
     private fun animateProgressImage(v: View) {
@@ -93,6 +94,14 @@ class WeatherSuccessFragment : Fragment(), IFetchCurrentWeatherListener, IFetchF
 
     private fun clearProgressImageAnimation(v: View) {
         v.imageView_loading.clearAnimation()
+    }
+
+    private fun startSlideUpAnimation(v: View) {
+        val slideUpAnimation = AnimationUtils.loadAnimation(
+            v.context,
+            R.anim.slide_up
+        )
+        v.recyclerView_weather_forecast.startAnimation(slideUpAnimation)
     }
 
     override fun onCurrentWeatherFetchSuccess(currentTemp: String, currentCity: String, currentIcon: String) {
@@ -106,23 +115,31 @@ class WeatherSuccessFragment : Fragment(), IFetchCurrentWeatherListener, IFetchF
             textView_current_city.text = currentCity
             CommonUtils.configureGlideForWeatherIcon(imageview_current_icon, currentIcon, mContext!!)
         }
-        hideProgress(view!!)
+        if (view != null) {
+            hideProgress(view!!)
+        }
     }
 
     override fun onCurrentWeatherFetchError(errorMessage: String) {
         Log.i(TAG, "current: errorMessage:: $errorMessage")
-        hideProgress(view!!)
+        if (view != null) {
+            hideProgress(view!!)
+        }
     }
 
     override fun onForecastWeatherFetchSuccess(temp: String, date: String) {
         Log.i(TAG, "forecast:: temp:: $temp")
         Log.i(TAG, "forecast:: city:: $date")
-        hideProgress(view!!)
+        if (view != null) {
+            hideProgress(view!!)
+        }
     }
 
     override fun onForecastWeatherFetchError(errorMessage: String) {
         Log.i(TAG, "forecast: errorMessage:: $errorMessage")
-        hideProgress(view!!)
+        if (view != null) {
+            hideProgress(view!!)
+        }
     }
 
     companion object {
