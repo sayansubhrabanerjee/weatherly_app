@@ -43,3 +43,5 @@ This could be improved by tracing the current location. App hits API if location
 2. In this app, while offline, user needs to turn-on Wi-Fi to get recent weather updates. </br>
 This could be improved by caching data in Room database and showing the results during offline as well. This would provide seamless UX.
 3. We can implement Google Paging Library to handle the weather forecast data more efficiently.
+
+# YouTube: https://youtu.be/9Qj31_ChtEo
