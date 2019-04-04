@@ -18,6 +18,8 @@ This can be thought of as a use case: Network Available
 It will start fetching the data from server and display loading icon. This icon will be hidden after receiving the response and the header UI will be posted with current location, current temperature, current weather icon.
 The footer part of the UI consists of a RecyclerView, which displays Forecast of the next 5 days 3 hour weather data, where each item consists of weather icon, date-time and respective temperature (in Celsius scale).
 This list will be presented beautifully with slide up animation.
+Screen orientation has been taken care for Tablets.
+Tablets will support both Ladscape and Portrait mode but Smartphones will only support Portrait mode as of now.
 
 # Sad Path or Failure Case:
 
@@ -35,6 +37,7 @@ Network Calls: Retrofit, RxJava/RxAndroid </br>
 Logging Network Calls: OkHttp/HttpLoggingInterceptor </br>
 Image Processing: Glide </br>
 Layout: ConstraintLayout </br>
+Supported OS: 22+
 
 # Improvement Areas or Tech-Debts:
 
