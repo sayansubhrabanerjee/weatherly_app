@@ -49,3 +49,17 @@ This could be improved by caching data in Room database and showing the results 
 
 # YouTube: 
 https://youtu.be/9Qj31_ChtEo
+
+# Screenshots:
+
+<img src= "https://user-images.githubusercontent.com/28148825/55579135-37a5b280-5735-11e9-9c03-6a6d75ef0f44.png" width = "200" height = "400">
+
+</br>
+
+<img src= "https://user-images.githubusercontent.com/28148825/55579188-4be9af80-5735-11e9-88a6-a820e01baac1.png" width = "200" height = "400">
+
+</br>
+
+<img src= "https://user-images.githubusercontent.com/28148825/55579213-5b68f880-5735-11e9-9219-d9f00fa479e7.png" width = "200" height = "400">
+
+</br>
